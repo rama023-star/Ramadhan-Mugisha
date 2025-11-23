@@ -1392,9 +1392,35 @@
                 text-decoration: underline;
             }
         }
+ /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            width: 70px;
+            height: 70px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(10deg);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.7);
+        }
+
 
         /* Retina display support */
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             /* High DPI styles can go here */
         }
+
     
